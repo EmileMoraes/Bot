@@ -3,7 +3,10 @@
 
 
 ## Tools
-. Nodejs
-. discord.js
-. env
-. dotenv
+*Nodejs*
+
+*discord.js*
+
+*env*
+
+*dotenv*
