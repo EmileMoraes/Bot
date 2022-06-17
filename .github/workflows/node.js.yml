@@ -1,8 +1,8 @@
 name: Node.js CI
 
 env:
-    BOT_TOKEN: ${{ secrets.TOKEN }}
-    SLACK_CHANNEL: ${{ secrets.ID_CHANNEL }}
+    TOKEN: ${{ secrets.TOKEN }}
+    ID_CHANNEL: ${{ secrets.ID_CHANNEL }}
 
 on:
   push:
