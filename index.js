@@ -8,11 +8,15 @@ client.once('ready', () => {
 
     const Channel = client.channels.cache.get(process.env.ID_CHANNEL);
     if (!Channel) return console.error("Couldn't find the channel.");
-    Channel.send("Olá, Emile!").catch(e => console.log(e));
+    Channel.send("Hi, Emile!").catch(e => console.log(e));
 
-    client.destroy;
-
+    setInterval((function () {
+        return process.exit(0);
+      }), 120)
 });
 
+process.on('exit', function (code) {
+    return console.log(`${new Date()} [INFO] About to exit with code ${code}`);
+  });
 
 client.login(process.env.TOKEN);
