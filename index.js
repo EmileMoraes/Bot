@@ -9,6 +9,10 @@ client.once('ready', () => {
     const Channel = client.channels.cache.get(process.env.ID_CHANNEL);
     if (!Channel) return console.error("Couldn't find the channel.");
     Channel.send("Olá, Emile!").catch(e => console.log(e));
+
+    client.destroy;
+
 });
+
 
 client.login(process.env.TOKEN);
