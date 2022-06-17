@@ -10,9 +10,8 @@ client.once('ready', () => {
     if (!Channel) return console.error("Couldn't find the channel.");
     Channel.send("Olá, Emile!").catch(e => console.log(e));
 
-    client.destroy;
-
 });
 
+ client.destroy();
 
 client.login(process.env.TOKEN);
